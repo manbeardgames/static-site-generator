@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        //  We want to compile to es5 since we want to build a pacakge with 
+        //  browser compatibility
+        "target": "es5",
+        //  Using commonjs for compatability
+        "module": "commonjs",
+        //  True will export type definitions together with the compiled javascript code so
+        //  the package can be used with both Typescript and Javascript
+        "declaration": true,
+        //  Directory where the javascript will be compiled to
+        "outDir": "./lib",
+        //  "use strict"
+        "strict": true
+    },
+    //  Include all files in the src folder
+    "include": ["src"],
+    //  Exclue node_modules so we don' transpile them, as well as any tests used in development
+    "exclude": ["node_modules", "**/__tests__/**"]
+}
