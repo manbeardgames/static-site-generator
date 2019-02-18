@@ -11,7 +11,7 @@
         //  Directory where the javascript will be compiled to
         "outDir": "./generator/lib",
         //  "use strict"
-        "strict": true,
+        "strict": false,
         "noImplicitAny": false
     },
     //  Include all files in the src folder

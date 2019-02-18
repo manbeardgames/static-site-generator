@@ -1,6 +1,22 @@
 import * as fse from 'fs-extra';
 
-export function Process(source:string, destination:string) {
-    console.log(`Copying images from "${source} to ${destination}`);
-    fse.copySync(source, destination);
+export function Process(src: string, dest: string) {
+  // 1 - Create a new Promise
+  return new Promise(function (resolve, reject) {
+    //  2 - Put your code inside this function
+
+    console.log(`Copying images from "${src} to ${dest}`);
+    fse.copy(src, dest)
+      .then(() => {
+        resolve();
+      })
+      .catch((err) => {
+        reject(err);
+      });
+  });
+}
+
+export function ProcessSync(src:string, dest:string) {
+  console.log(`Copying images from "${src} to ${dest}`);
+  fse.copySync(src, dest);
 }
