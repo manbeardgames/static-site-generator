@@ -9,12 +9,13 @@
         //  the package can be used with both Typescript and Javascript
         "declaration": true,
         //  Directory where the javascript will be compiled to
-        "outDir": "./lib",
+        "outDir": "./generator/lib",
         //  "use strict"
-        "strict": true
+        "strict": true,
+        "noImplicitAny": false
     },
     //  Include all files in the src folder
-    "include": ["src"],
+    "include": ["./generator/src"],
     //  Exclue node_modules so we don' transpile them, as well as any tests used in development
     "exclude": ["node_modules", "**/__tests__/**"]
 }

@@ -1,0 +1,31 @@
+<%# ---------------------------------------------------------------------------------
+  Name:         game.ejs
+  Type:         Layout
+  Description:  This is the layout templete used by individual game pages
+  Last Refactored: 11/28/2018
+---------------------------------------------------------------------------------  #%>
+
+<!doctype html>
+<html>
+    <head>
+        <% include ../partials/_head %>
+    </head>
+
+    <body>
+        <% include ../partials/navs/_default-top-nav %>
+        
+        <header>
+            <% include ../partials/sections/_game-trailer %>
+        </header>
+
+        <main id="game-main">
+            <% include ../partials/sections/_game-description %>
+            <% include ../partials/sections/_game-platform %>
+        </main>
+
+        <footer>
+            <% include ../partials/footers/_default-footer %>
+        </footer>
+        <% include ../partials/scripts/_default-scripts %>
+    </body>
+</html>

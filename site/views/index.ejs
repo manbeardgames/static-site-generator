@@ -1,0 +1,27 @@
+---
+site: {
+    title: "ManBeardGames",
+    description: "ManBeardGames is an indie game developer, web developer, and twitch streamer."
+}
+
+og: {
+    title: "ManBeardGames",
+    image: "https://manbeardgames.com/img/ogmbg.png",
+    description: "ManBeardGames is an indie game developer, web developer, and twitch streamer."
+}
+
+page: {
+    layout: "default",
+    navheader: "ManBeardGames"
+}
+---
+
+<% include ../partials/_landing %>
+<div class="content">
+<div id="swap"></div>
+  <div class="container-fluid m-0 p-0">
+    <div id="games">
+      <%- include ../partials/_games %>
+    </div>
+  </div>
+</div>

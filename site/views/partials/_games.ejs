@@ -1,0 +1,33 @@
+<!-- BEGIN: source/partials/_games.ejs -->
+<% games.forEach(function(game){ %>
+
+<section class="game" id="game_<%- game.name.toLowerCase().replace(/ /g, '-') %>">
+
+        <div class="game-container">
+            <div class="game-preview-container">
+                <img class="img-responsive img-thumbnail" src="img/games/<%- game.nameSpine %>/game_preview.png" alt="...">
+            </div>
+
+            <div class="game-overview-container">
+                <h3>
+                    <%- game.name %>
+                </h3>
+                <p>
+                    <%- game.shortDescription %>
+                </p>
+
+                <div class="block-platforms">
+                    <% game.platforms.forEach((platform, i) => { %>
+                        <div class="platform">
+                            <a href="<%- platform.url %>" target="_blank">
+                                <div class="platform-badge" style="background-image: url('img/badges/<%- platform.name %>-badge.png');"></div>
+                            </a>
+                        </div>
+                    <% }) %>           
+                </div>          
+                <a class="btn btn-primary btn-large" href="/<%= game.nameSpine %>">More Info</a>
+            </div>
+        </div>
+</section>
+<% }) %>
+<!-- END: source/partials/_games.ejs -->

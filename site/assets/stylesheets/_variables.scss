@@ -1,0 +1,153 @@
+// -------------------------------------------------------------------------
+//  Restate bootstrap colors
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$grays: () !default;
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan: #17a2b8 !default;
+
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark: $gray-800 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+//  End restating bootstrap colors
+// -------------------------------------------------------------------------
+
+// -------------------------------------------------------------------------
+//  Site colors
+$ophidianblue:    #081E3C;
+$ophidianorange:  #F88A00;
+$ophidianyellow:  #FFF68F;
+$ophidiangreen:   #4AC389;
+$ophidianred:     #F8092C;
+
+$ophidian-colors: () !default;
+$ophidian-colors: map-merge(
+  (
+    "ophidianblue":     $ophidianblue,
+    "ophidianorange":   $ophidianorange,
+    "ophidianyellow":   $ophidianyellow,
+    "ophidiangreen":    $ophidiangreen,
+    "ophidianred":      $ophidianred,
+  ),
+  $ophidian-colors
+);
+
+
+//  End site colors
+// -------------------------------------------------------------------------
+
+$zindex-main-sidebar: 1100 !default;
+$sidebar-width: 250px !default;
+$sidebar-padding-x: 0.5rem !default;
+$sidebar-padding-y: 0 !default;
+$nav-link-padding-y:                .5rem !default;
+$nav-link-padding-x: 1rem !default;
+
+$sidebar-mini-width: ($nav-link-padding-x + $sidebar-padding-x + .8rem) * 2 !default;
+$sidebar-nav-icon-width: $sidebar-mini-width - (($sidebar-padding-x + $nav-link-padding-x) * 2);
+$sidebar-user-image-width: $sidebar-nav-icon-width + ($nav-link-padding-x / 2);
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px
+$font-size-sm: ($font-size-base * .875) !default;
+
+$main-footer-padding: 15px !default;
+$main-footer-border-top-width: 1px !default;
+$main-footer-border-top-color: $gray-300 !default;
+$main-footer-border-top: $main-footer-border-top-width solid $main-footer-border-top-color !default;
+$main-footer-height: 30px; //(($font-size-root * $line-height-base) + ($main-footer-padding * 2)) + $main-footer-border-top-width !default;
+$main-footer-bg: $white;
+
+
+$spacer: 1rem !default;
+$navbar-padding-y:  ($spacer / 2) !default;
+$navbar-padding-x: ($spacer / 2) !default;
+
+// Content padding
+$content-padding-y: 0 !default;
+$content-padding-x: $navbar-padding-x !default;
+
+
+$main-footer-padding: 15px !default;
+$main-footer-border-top-width: 1px !default;
+$main-footer-border-top-color: $gray-300 !default;
+$main-footer-border-top: $main-footer-border-top-width solid $main-footer-border-top-color !default;
+$main-footer-height: 30px; //(($font-size-root * $line-height-base) + ($main-footer-padding * 2)) + $main-footer-border-top-width !default;
+$main-footer-bg: $white;
+
+$boxed-layout-max-width: 1250px !default;
+
+$main-bg: #f4f6f9 !default;
